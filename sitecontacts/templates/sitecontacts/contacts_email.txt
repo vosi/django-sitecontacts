@@ -1,0 +1,11 @@
+Message from site!
+From: {{ from }}
+Email: {{ email }}
+{% if phone %}
+Phone: {{ phone }}
+{% endif %}
+
+Message:
+{{ message }}
+
+Regards!

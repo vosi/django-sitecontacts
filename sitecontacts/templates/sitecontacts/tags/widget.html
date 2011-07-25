@@ -1,0 +1,20 @@
+<div class="vcard">
+	<span class="category"><span class="value-title" title="{{ widget_latest.category }}"> </span></span>
+	<span class="fn org">{{ widget_latest.name }}</span>
+	<span class="url"><span class="value-title" title="{{ widget_latest.url }}"> </span></span>
+	<div class="adr">
+		<span class="postal-code">{{ widget_latest.postal_code }}</span>
+		<span class="country-name">{{ widget_latest.country_name }}</span>
+		<span class="region">{{ widget_latest.region }}</span>
+		<span class="locality">{{ widget_latest.locality }}</span>,
+		<span class="street-address">{{ widget_latest.street_address }}</span>
+	</div>
+	<span class="geo">
+		<abbr class="latitude" title="{{ widget_latest.geo_lat }}"></abbr>
+		<abbr class="longitude" title="{{ widget_latest.geo_long }}"></abbr>
+	</span>
+	<span class="tel">Тел.: <abbr class="value" title="{{ widget_latest.tel }}">{{ widget_latest.tel }}</abbr></span>
+	<span class="email">e-mail: <abbr class="value" title="{{ widget_latest.email }}">
+		<a href="mailto:{{ widget_latest.email }}">{{ widget_latest.email }}</a>
+	</abbr></span>
+</div>

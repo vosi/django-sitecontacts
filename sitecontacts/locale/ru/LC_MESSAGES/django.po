@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-sitecontacts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-25 10:03+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: forms.py:9 forms.py:11 forms.py:21 models.py:14 models.py:16
+msgid "Format: +1234 (12345) 123-45-67"
+msgstr "Формат: +1234 (12345) 123-45-67"
+
+#: forms.py:18 models.py:11
+msgid "Name"
+msgstr "Название"
+
+#: forms.py:19 models.py:17 templates/sitecontacts/contacts_list.html:35
+msgid "Email"
+msgstr "Емейл"
+
+#: forms.py:20 models.py:13 templates/sitecontacts/contacts_list.html:25
+msgid "Phone"
+msgstr "Телефон"
+
+#: forms.py:22
+msgid "Message"
+msgstr "Сообщение"
+
+#: models.py:8
+msgid "Title"
+msgstr "Заголовок"
+
+#: models.py:10
+msgid "Category"
+msgstr "Категория"
+
+#: models.py:12
+msgid "URL"
+msgstr ""
+
+#: models.py:15 templates/sitecontacts/contacts_list.html:30
+msgid "Fax"
+msgstr "Факс"
+
+#: models.py:20
+msgid "Zip code"
+msgstr "Индекс"
+
+#: models.py:21
+msgid "Country"
+msgstr "страна"
+
+#: models.py:22
+msgid "Region"
+msgstr "Регион/область"
+
+#: models.py:23
+msgid "City"
+msgstr "Город"
+
+#: models.py:24 templates/sitecontacts/contacts_list.html:11
+msgid "Address"
+msgstr "Адрес"
+
+#: models.py:25
+msgid "Latitude"
+msgstr "Широта"
+
+#: models.py:26
+msgid "Longitude"
+msgstr "Долгота"
+
+#: models.py:28
+msgid "Is main?"
+msgstr "Главное"
+
+#: models.py:31
+msgid "Is active?"
+msgstr "Активно"
+
+#: models.py:32
+msgid "Date created"
+msgstr "Создано"
+
+#: models.py:38
+msgid "Date modified"
+msgstr "Изменено"
+
+#: models.py:74
+msgid "Contact"
+msgstr "Контакт"
+
+#: models.py:75 templates/sitecontacts/contacts_base.html:3
+#: templates/sitecontacts/contacts_list.html:21
+msgid "Contacts"
+msgstr "Контакты"
+
+#: settings.py:4
+msgid "Message sent!"
+msgstr "Сообщение отправлено!"
+
+#: views.py:29
+msgid "Email from site!"
+msgstr "Письмо с сайта!"
+
+#: templates/sitecontacts/contacts_form.html:8
+msgid "Contacts form"
+msgstr "Форма обратной связи"
+
+#: templates/sitecontacts/contacts_form.html:28
+msgid "Send message"
+msgstr "Отправить"
+
+#: templates/sitecontacts/contacts_list.html:16
+#, python-format
+msgid ""
+"Find on <a href=\"http://maps.yandex.ru/?text=%(addr)s\">Yandex maps</a>"
+msgstr ""
+"Найти на <a href=\"http://maps.yandex.ru/?text=%(addr)s\">Yandex-картах</a>"

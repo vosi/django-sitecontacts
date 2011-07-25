@@ -1,0 +1,11 @@
+{% extends "sitecontacts/base.html" %}
+{% load i18n %}
+{% block sitecontacts_title %}{%  trans "Contacts" %}{% endblock %}
+
+{% block sitecontacts_content %}
+	{% include "sitecontacts/contacts_form.html" %}
+{% endblock %}
+
+{% block sitecontacts_list %}
+	{% include "sitecontacts/contacts_list.html" %}
+{% endblock %}

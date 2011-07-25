@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<div class="sitecontacts-list">
+	{{ form.media }}
+	<form action="{% url sitecontacts-form %}" method="POST" id="sitecontacts-form">
+		{% csrf_token %}
+		<fieldset>
+			<h2>{% trans "Contacts form" %}</h2>
+			<table><tbody>
+			{% for field in form %}
+				<tr class="{% if field.errors %}error{% endif %}">
+					<th>
+						<label for="{{ field.auto_id }}">{{ field.label }}{% if field.field.required %}*{% endif %}:</label>
+					</th>
+					<td>
+						{{ field }}
+						{% if field.help_text %}<br/>
+							<span class="helptext">{{ field.help_text }}</span>
+						{% endif %}
+						{{ field.errors }}
+					</td>
+				</tr>
+			{% endfor %}
+
+			<tr>
+				<th></th>
+				<td>
+					<input class="submit" type="submit" value="{% trans "Send message" %}"
+						   id="sitecontacts-form-submit"/>
+				</td>
+			</tr>
+			</tbody></table>
+		</fieldset>
+	</form>
+</div>
