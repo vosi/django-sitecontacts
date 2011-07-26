@@ -1,0 +1,8 @@
+include README
+include AUTHORS
+include LICENSE
+recursive-include sitecontacts/locale *
+recursive-include sitecontacts/migrations *
+recursive-include sitecontacts/static *
+recursive-include sitecontacts/templates *
+recursive-include sitecontacts/templatetags *
