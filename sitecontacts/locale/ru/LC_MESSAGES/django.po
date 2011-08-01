@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-sitecontacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-25 10:03+0300\n"
+"POT-Creation-Date: 2011-08-01 20:39+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,11 +27,11 @@ msgstr "Формат: +1234 (12345) 123-45-67"
 msgid "Name"
 msgstr "Название"
 
-#: forms.py:19 models.py:17 templates/sitecontacts/contacts_list.html:35
+#: forms.py:19 models.py:17 templates/sitecontacts/contacts_list.html:31
 msgid "Email"
 msgstr "Емейл"
 
-#: forms.py:20 models.py:13 templates/sitecontacts/contacts_list.html:25
+#: forms.py:20 models.py:13 templates/sitecontacts/contacts_list.html:21
 msgid "Phone"
 msgstr "Телефон"
 
@@ -51,7 +51,7 @@ msgstr "Категория"
 msgid "URL"
 msgstr ""
 
-#: models.py:15 templates/sitecontacts/contacts_list.html:30
+#: models.py:15 templates/sitecontacts/contacts_list.html:26
 msgid "Fax"
 msgstr "Факс"
 
@@ -71,7 +71,7 @@ msgstr "Регион/область"
 msgid "City"
 msgstr "Город"
 
-#: models.py:24 templates/sitecontacts/contacts_list.html:11
+#: models.py:24 templates/sitecontacts/contacts_list.html:9
 msgid "Address"
 msgstr "Адрес"
 
@@ -84,27 +84,31 @@ msgid "Longitude"
 msgstr "Долгота"
 
 #: models.py:28
+msgid "Link to map"
+msgstr "Сылка на карту"
+
+#: models.py:30
 msgid "Is main?"
 msgstr "Главное"
 
-#: models.py:31
+#: models.py:33
 msgid "Is active?"
 msgstr "Активно"
 
-#: models.py:32
+#: models.py:34
 msgid "Date created"
 msgstr "Создано"
 
-#: models.py:38
+#: models.py:40
 msgid "Date modified"
 msgstr "Изменено"
 
-#: models.py:74
+#: models.py:76
 msgid "Contact"
 msgstr "Контакт"
 
-#: models.py:75 templates/sitecontacts/contacts_base.html:3
-#: templates/sitecontacts/contacts_list.html:21
+#: models.py:77 templates/sitecontacts/contacts_base.html:3
+#: templates/sitecontacts/contacts_list.html:17
 msgid "Contacts"
 msgstr "Контакты"
 
@@ -124,9 +128,8 @@ msgstr "Форма обратной связи"
 msgid "Send message"
 msgstr "Отправить"
 
-#: templates/sitecontacts/contacts_list.html:16
-#, python-format
-msgid ""
-"Find on <a href=\"http://maps.yandex.ru/?text=%(addr)s\">Yandex maps</a>"
+#: templates/sitecontacts/contacts_list.html:13
+#, fuzzy, python-format
+msgid "Find on <a href=\"%(addr)s\">Yandex maps</a>"
 msgstr ""
 "Найти на <a href=\"http://maps.yandex.ru/?text=%(addr)s\">Yandex-картах</a>"

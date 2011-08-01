@@ -10,10 +10,8 @@ class Contacts(models.Model):
     category = models.CharField(_('Category'), max_length=255)
     name = models.CharField(_('Name'), max_length=255)
     url = models.URLField(_('URL'), max_length=255)
-    tel = models.CharField(_('Phone'), max_length=255)
-    tel.help_text = _('Format: +1234 (12345) 123-45-67')
-    fax = models.CharField(_('Fax'), max_length=255, blank=True, null=True)
-    fax.help_text = _('Format: +1234 (12345) 123-45-67')
+    tel = models.CharField(_('Phone'), help_text=_('Format: +1234 (12345) 123-45-67'), max_length=255)
+    fax = models.CharField(_('Fax'), help_text=_('Format: +1234 (12345) 123-45-67'), max_length=255, blank=True, null=True)
     email = models.EmailField(_('Email'), max_length=255)
 
 
@@ -22,8 +20,10 @@ class Contacts(models.Model):
     region = models.CharField(_('Region'), max_length=255)
     locality = models.CharField(_('City'), max_length=255)
     street_address = models.CharField(_('Address'), max_length=255)
-    geo_lat = models.DecimalField(_('Latitude'), max_digits=8, decimal_places=6)
-    geo_long = models.DecimalField(_('Longitude'), max_digits=8, decimal_places=6)
+    geo_lat = models.DecimalField(_('Latitude'), max_digits=8, decimal_places=6, blank=True, null=True)
+    geo_long = models.DecimalField(_('Longitude'), max_digits=8, decimal_places=6, blank=True, null=True)
+
+    maplink = models.URLField(_('Link to map'), blank=True, null=True)
 
     main = models.BooleanField(_('Is main?'), default=True, db_index=True)
 

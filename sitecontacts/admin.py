@@ -21,7 +21,7 @@ class ContactsAdmin(admin.ModelAdmin):
         (None, {'fields': ['url', 'tel', 'fax', 'email', ]}),
         (None, {'fields': ['country_name', 'postal_code', 'region', ]}),
         (None, {'fields': ['locality', 'street_address', ]}),
-        (None, {'fields': ['geo_lat', 'geo_long', ]}),
+        (None, {'fields': ['geo_lat', 'geo_long', 'maplink' ]}),
         (None, {'fields': ['main', 'active' ]}),
     ]
 

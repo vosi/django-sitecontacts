@@ -3,18 +3,14 @@
 <div class="sitecontacts-list">
 {% for contacts in contacts_list %}
 	<table>
-	{% if not forloop.first %}
 	<caption>{{ contacts.title }}</caption>
-	{% endif %}
-		<tbody>
+	<tbody>
 	<tr>
 		<th>{% trans "Address" %}</th>
 		<td>
 			{{ contacts.street_address }}, {{ contacts.locality }}<br>
 			{{ contacts.postal_code }}, {{ contacts.country_name }}<br>
-			{% with contacts.country_name|add:', '|add:contacts.region|add:', '|add:contacts.locality|add:', '|add:contacts.street_address as address %}
-				{% blocktrans with addr=address|urlencode %}Find on <a href="http://maps.yandex.ru/?text={{ addr }}">Yandex maps</a>{% endblocktrans %}
-			{% endwith %}
+			{% blocktrans with addr=contacts.maplink %}Find on <a href="{{ addr }}">Yandex maps</a>{% endblocktrans %}
 		</td>
 	</tr>
 	<tr>
