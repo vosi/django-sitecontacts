@@ -22,7 +22,7 @@ class Sitecontactsapp(object):
             return self.init_sitecontacts_latest()
 
     def sitecontacts_latest(self, context):
-        if 0 in self.get_sitecontacts_latest():
+        if len(self.get_sitecontacts_latest()) > 0:
             return self.get_sitecontacts_latest()[0]
         else:
             return None
