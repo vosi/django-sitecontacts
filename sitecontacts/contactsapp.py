@@ -22,7 +22,10 @@ class Sitecontactsapp(object):
             return self.init_sitecontacts_latest()
 
     def sitecontacts_latest(self, context):
-        return self.get_sitecontacts_latest()[0]
+        if 0 in self.get_sitecontacts_latest():
+            return self.get_sitecontacts_latest()[0]
+        else:
+            return None
 
     def cache_flush(self, **kwargs):
         cache.delete('cache_sitecontacts_latest')
