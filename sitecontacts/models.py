@@ -15,7 +15,7 @@ class Contacts(models.Model):
     email = models.EmailField(_('Email'), max_length=255)
 
 
-    postal_code = models.CharField(_('Zip code'), )
+    postal_code = models.CharField(_('Zip code'), max_length=7)
     country_name = models.CharField(_('Country'), max_length=255)
     region = models.CharField(_('Region'), max_length=255)
     locality = models.CharField(_('City'), max_length=255)
